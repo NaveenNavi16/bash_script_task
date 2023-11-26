@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# This script checks if a number is positive, negative, or zero
+
+echo "Enter a number:"
+
+# Read the user's input into a variable named 'number'
+read number
+
+# Check if the number is greater than 0
+if [ "$number" -gt 0 ]; then
+    echo "The number is positive."
+# Check if the number is less than 0
+elif [ "$number" -lt 0 ]; then
+    echo "The number is negative."
+# If the number is not greater than 0 and not less than 0, it must be 0
+else
+    echo "The number is zero."
+fi
